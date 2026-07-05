@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fajar.stretchup"
+    namespace = "com.fajarnasrullah.stretchup"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -15,7 +15,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.fajar.stretchup"
+        applicationId = "com.fajarnasrullah.stretchup"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
