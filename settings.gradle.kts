@@ -40,3 +40,4 @@ include(":feature:settings")
 include(":feature:statistics")
 include(":feature:workout")
 
+include(":core:model")

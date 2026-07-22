@@ -1,22 +1,19 @@
 plugins {
     id("stretchup.android.library")
+    id("stretchup.android.library.compose")
+    id("stretchup.hilt")
 }
 
 android {
     namespace = "com.fajarnasrullah.stretchup.core.common"
-
-    defaultConfig {
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
-    }
-
 }
 
 dependencies {
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.junit)
+
+    implementation(libs.kotlinx.coroutines.android)
+
+    implementation(libs.timber)
+
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 }
